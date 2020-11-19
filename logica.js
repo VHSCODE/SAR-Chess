@@ -2,6 +2,7 @@ var board = null
 var game = new Chess()
 var $status = $('#status')
 
+var id =''
 var config = {
     draggable: true,
     onDragStart: onDragStart,
@@ -16,6 +17,10 @@ $('#resetear').on('click', resetear)
 
 
 $status.html("Esperando...")
+
+
+xhr = new XMLHttpRequest()
+
 
 
 function onDragStart(source, piece, position, orientation) {
@@ -79,11 +84,13 @@ function actualizar_estado()
         }
 
         $status.html(estado)
+        enviar_tablero_servidor()
     }
 
 
 function empezarPartida() {
     board.start()
+    id = Math.random().toString(16).substr(2, 16);
     $('#empezar').attr("disabled", true);
 
     actualizar_estado()
@@ -95,4 +102,10 @@ function resetear() {
     game.reset()
     $('#empezar').attr("disabled", false)
     $status.html("Esperando...")
+}
+
+function enviar_tablero_servidor()
+{
+    xhr.open('GET','partidas.php?id_partida='+id+"&estado=" + game.fen(),false)
+    xhr.send('')
 }
