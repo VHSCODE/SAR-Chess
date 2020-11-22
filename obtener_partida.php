@@ -4,7 +4,7 @@
 $id_partida = $_GET['id'];
 $base_datos = simplexml_load_file("partidas.xml");
 
-$mov_array = array();
+$mov_array = [];
 
 
 //Buscamos si la partida ya existe en la base de datos y añadimos el nuevo estado del tablero. PD: No es muy eficiente :P

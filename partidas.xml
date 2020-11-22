@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE visitas SYSTEM "comentarios.dtd">
+<!DOCTYPE partidas SYSTEM "partidas.dtd">
 <partidas>
 	<partida id_partida="c0329f319abfa">
 		<movimiento>
@@ -27,6 +27,26 @@
 		</movimiento>
 		<movimiento>
 			rnbqkb1r/pp1ppppp/5n2/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 2 3
+		</movimiento>
+	</partida>
+	<partida id_partida="49c69790119c38">
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq e6 0 2
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+		</movimiento>
+		<movimiento>
+			r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3
+		</movimiento>
+		<movimiento>
+			r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3
 		</movimiento>
 	</partida>
 </partidas>

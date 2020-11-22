@@ -13,8 +13,10 @@
     {
 
         $id_partida = $partida['id_partida'];
-        echo '<h4><a href="" onclick=crear_repeticion("' . $id_partida. '")>Partida ' . $id_partida ."</a></h4> <br>";
+        echo '<h4><a href="#" onclick=crear_repeticion("' . $id_partida. '")>Partida ' . $id_partida ."</a></h4> <br>";
         echo "<div id='$id_partida' style='width: 400px'></div>";
+        echo '<button onclick=atras("' . $id_partida. '")><--</button>';
+        echo '<button onclick=adelante("' . $id_partida. '")>--></button>';
     }
     ?>
 
