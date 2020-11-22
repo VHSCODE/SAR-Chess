@@ -27,7 +27,6 @@ function onDragStart(source, piece, position, orientation) {
     if (game.game_over()) {
         return false;
     }
-
     //Solo dejamos que las fichas correspondientes al turno actual se puedan coger
     if ((game.turn() === 'w' && piece.search(/^b/) !== -1) ||
         (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
@@ -47,7 +46,6 @@ function onDrop(source, target) {
 
     //Si es ilegal, hacemos que la pieza vuelva a su sitio
     if (move === null) return 'snapback'
-
 
     actualizar_estado()
 
@@ -100,12 +98,15 @@ function empezarPartida() {
 function resetear() {
     board.clear()
     game.reset()
+    id = ''
     $('#empezar').attr("disabled", false)
     $status.html("Esperando...")
 }
-
+/**
+ * Esta funcion envia el id de la partida junto con un string que representa el estado actual del tablero al servidor.
+ */
 function enviar_tablero_servidor()
 {
-    xhr.open('GET','partidas.php?id_partida='+id+"&estado=" + game.fen(),false)
+    xhr.open('GET','partidas.php?id_partida='+id+"&estado=" + game.fen(),true)
     xhr.send('')
 }

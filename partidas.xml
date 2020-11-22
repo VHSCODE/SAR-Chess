@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE visitas SYSTEM "comentarios.dtd">
+<partidas>
+	<partida id_partida="c0329f319abfa">
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq c6 0 2
+		</movimiento>
+	</partida>
+	<partida id_partida="b476a0248a71e8">
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq c6 0 2
+		</movimiento>
+		<movimiento>
+			rnbqkbnr/pp1ppppp/8/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2
+		</movimiento>
+		<movimiento>
+			rnbqkb1r/pp1ppppp/5n2/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 2 3
+		</movimiento>
+	</partida>
+</partidas>
